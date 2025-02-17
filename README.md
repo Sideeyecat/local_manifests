@@ -16,3 +16,8 @@ If you've already synced Rom-Sources:
     mkdir -p .repo/local_manifests
     curl https://raw.githubusercontent.com/SM6225-Motorola/local_manifests/main/motorola-sm6225.xml > .repo/local_manifests/motorola-sm7325.xml
     repo sync
+
+Add KernelSu-Next
+---------
+    cd {Rom-Sources}/kernel/motorola/sm6225
+    curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
